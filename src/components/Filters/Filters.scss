@@ -1,0 +1,162 @@
+@import '../../scss/variables';
+
+.filterContainer {
+
+  width: 360px;
+  margin: 35px 20px;
+  padding-bottom: 10px;
+}
+
+.filters {
+  margin-left: 40px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: #fff;
+      box-shadow: 0px 0px 8px rgba(13, 74, 145, 0.15);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+
+  hr {
+    background-color: #EAEAEA;
+    border: 0;
+    height: 1px;
+    margin: 12px 0 24px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: $text_dark;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: $text_dark;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    color: $text_dark;
+  }
+
+  &.mobile {
+
+
+    padding-top: 10px;
+    display: block;
+    background-color: #fff;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    -webkit-box-shadow: -5px -5px 42px 1px rgba(34, 60, 80, 0.34);
+    -moz-box-shadow: -5px -5px 42px 1px rgba(34, 60, 80, 0.34);
+    box-shadow: -5px -5px 42px 1px rgba(34, 60, 80, 0.34);
+  }
+
+  transform: translateX(0);
+  transition-duration: .5s;
+
+  &.open {
+    transform: translateX(600px);;
+    position: absolute;
+  }
+
+
+  .mobileClose {
+    display: none;
+  }
+
+  @media (min-width: 1150px) {
+
+    &.mobile {
+
+      padding-top: 0;
+      position: relative;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+
+
+    &__header {
+      padding: 0;
+
+      button {
+        display: none;
+      }
+    }
+
+    &.open {
+      transform: none;
+      position: relative;
+    }
+
+
+
+  }
+
+  @media (max-width: 1150px) {
+
+    &__header {
+      padding: 10px 20px;
+
+
+    }
+
+    .desktop {
+      display: block;
+    }
+
+
+  }
+
+
+  @media (max-width: 500px) {
+
+    h2{
+      font-size: 16px;
+    }
+
+    width: 100%;
+
+    &__header {
+      padding: 10px 20px;
+
+    }
+    .filterContainer {
+
+      width: auto;
+      margin: 35px 20px;
+      padding-bottom: 10px;
+    }
+
+    .desktopClose {
+      display: none;
+    }
+
+    .mobileClose {
+      display: block;
+    }
+
+    &.open {
+      transform: none;;
+    }
+
+    transform: translateX(600px);
+  }
+
+
+}

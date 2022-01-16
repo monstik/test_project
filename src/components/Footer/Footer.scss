@@ -1,0 +1,163 @@
+.footer {
+  padding: 70px  100px 40px 100px;
+  background: url("../../assets/img/header_backgrund.jpeg");
+  height: 340px;
+
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h1{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  hr {
+    border: none;
+    background-color: #EAEAEA;
+    height: 0.5px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr max-content 0.25fr 1fr;
+    max-width: 500px;
+   margin: 20px auto ;
+
+    hr {
+      background-color: #fff;
+      width: 1px;
+      height: 12px;
+      margin: 0 30px;
+    }
+
+    p{
+      margin: 0 auto;
+    }
+
+    li{
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px){
+
+        flex-direction: column;
+
+      p {
+        font-size: 12px;
+      }
+
+    }
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: max-content;
+
+      margin-top: 12px;
+
+      hr {
+        margin: 0 15px;
+      }
+
+      &__hr {
+        display: none;
+      }
+
+      &__rights {
+
+        grid-row-start: 2;
+        grid-column-start: 1;
+
+        grid-row-end: 3;
+        grid-column-end: 4;
+
+        padding-top: 12px;
+
+      }
+    }
+
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-bottom: 70px;
+
+    &__contacts{
+      display: flex;
+      align-items: center;
+      padding: 8px;
+
+      img {
+        margin: 8px;
+      }
+    }
+
+    @media screen and (max-width: 1150px){
+
+        margin-left: 120px;
+
+    }
+
+    @media screen and (max-width: 930px){
+
+        margin-left: 0;
+
+    }
+    @media screen and (max-width: 768px){
+
+
+
+      &__others {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+      }
+
+      &__cooperation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 40px;
+      }
+      padding-top: 60px;
+
+        height: auto;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+  }
+
+
+
+  @media screen and (max-width: 768px){
+
+    height: 670px;
+    padding: 70px 20px 40px 20px;
+
+  }
+
+
+
+}

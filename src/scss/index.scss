@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'variables';
+@import 'libs/normalize';
+
+html {
+
+
+
+}
+
+body {
+  background-color: $background;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: max-content;
+
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+
+}
+
+
+
+.noclick {
+  pointer-events: none;
+}
+
+

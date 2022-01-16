@@ -1,0 +1,57 @@
+.pagination {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+
+  .current {
+    background-color: #000046;
+    color: #fff;
+  }
+
+  &__buttons {
+
+  color: #ADADAD;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+    margin: 0 8px;
+  }
+
+
+  &__pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+  }
+
+
+ &__arrow {
+
+
+      border: none;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      cursor: pointer;
+
+
+
+
+
+
+
+  }
+
+
+
+}

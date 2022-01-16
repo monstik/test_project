@@ -1,0 +1,26 @@
+.genderFilter{
+
+  button {
+    border: 1px solid #000046;
+    color: #000046;
+    font-size: 14px;
+    background-color: #ffffff;
+    height: 45px;
+    cursor: pointer;
+  }
+
+
+
+  .active {
+    background-color: #000046;
+    color: #ffffff;
+  }
+
+
+  &__buttonsGroup{
+
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

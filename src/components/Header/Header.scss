@@ -1,0 +1,153 @@
+@import "../../scss/variables";
+
+.header {
+  background-image: url('../../assets/img/header_backgrund.jpeg');
+  height: 230px;
+
+
+  @media(max-width: 768px){
+    height: 280px;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 33px;
+
+    &__userTypeDesktop {
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          font-size: 16px;
+          color: $text_lightGray;
+          line-height: 24px;
+          cursor: pointer;
+          text-align: center;
+          @include noselect();
+
+          &::before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+          }
+        }
+
+
+        hr {
+          margin: 0 15px;
+          border: none;
+          background-color: #fff;
+          width: 1px;
+          height: 12px;
+        }
+      }
+
+      .active {
+        font-weight: 600;
+        color: #ffffff;
+
+
+      }
+
+
+    }
+
+    &__userTypeMobile{
+
+      display: none;
+      align-items: center;
+
+      p {
+        color: #ffffff;
+        font-size: 13px;
+        margin-right: 10px;
+      }
+    }
+
+    &__language {
+
+      display: flex;
+      align-items: center;
+
+
+      p {
+        font-size: 14px;
+        margin: 5px;
+        font-weight: 300;
+        display: inline;
+        color: $text_lightGray;
+      }
+    }
+
+    &__rightSide {
+      display: flex;
+      align-items: center;
+
+      .loginButton {
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        height: 17px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 25px;
+
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      padding: 10px 26px 8px 26px;
+
+      &__userTypeDesktop {
+        display: none;
+      }
+
+      &__userTypeMobile {
+        display: flex;
+      }
+
+      &__language {
+        p {
+          font-size: 12px;
+        }
+
+        img {
+          width: 13px;
+        }
+      }
+
+      &__rightSide {
+        .loginButton {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .zaglushka_auth{
+
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-left: 11px;
+      font-weight: 500;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px){
+      display: flex;
+    }
+  }
+}

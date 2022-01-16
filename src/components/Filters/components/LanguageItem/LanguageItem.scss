@@ -1,0 +1,59 @@
+.mainBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  button {
+    border: none;
+    background-color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.additionalBlock {
+  width: 80%;
+  margin: 10px 0;
+
+  overflow: hidden;
+
+  -webkit-transition: max-height .7s;
+  transition: max-height .7s;
+
+  max-height: 0;
+
+  &__item {
+    margin: 10px 0;
+    img {
+      margin-right: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+  }
+
+
+  &.open {
+    max-height: 500px;
+  }
+}
+
+.customize {
+
+  flex-direction: column;
+  width: 100%;
+
+  &__orderLabel {
+    display: flex;
+    align-items: center;
+  }
+
+  .countryIcon {
+
+    margin: -2px 10px 0 0;
+  }
+
+
+}

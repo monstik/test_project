@@ -1,0 +1,171 @@
+@import '../scss/variables';
+
+.container{
+  padding: 70px 300px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+
+
+  @media screen and (max-width: 1900px) {
+
+    padding: 70px 100px;
+
+  }
+
+  @media screen and (max-width: 1290px) {
+
+    padding: 40px 40px;
+
+  }
+
+  @media screen and  (max-width: 1150px) {
+
+    padding: 40px 120px;
+
+  }
+
+  @media screen and  (max-width: 930px) {
+
+    padding: 40px 70px;
+
+  }
+
+  @media screen and  (max-width: 850px) {
+
+    padding: 40px 20px;
+
+  }
+
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+
+
+}
+
+.summariesHeader {
+
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: $text_dark;
+
+  }
+
+  h2{
+
+    color: $text_gray;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  span {
+    color: $link;
+  }
+
+  hr {
+    margin: 16px 0;
+    width: 170px;
+    height: 1px;
+    border: none;
+    background-color: #000046;
+  }
+
+  &__navBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+    .timeSelect {
+      display: flex;
+      cursor: pointer;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: $link;
+        margin: 0 20px;
+      }
+
+
+    }
+
+    .openFilters {
+      margin-left: auto;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: none;
+      }
+
+
+
+
+
+
+    @media screen and (max-width: 1150px) {
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      &__buttons {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .desktop {
+        display: block;
+      }
+
+      .timeSelect {
+        font-size: 12px;
+        font-weight: normal;
+
+        p {
+          margin: 0 20px 0 0;
+        }
+      }
+
+
+
+    }
+
+    @media screen and (max-width: 500px) {
+
+
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+
+
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+
+}

@@ -1,0 +1,31 @@
+$black: #232323;
+$background: #fff;
+$gray-line: #f6f6f6;
+$orange: #fe5f1e;
+
+$link: #0096C7;
+
+$text_gray: #5B5B5B;
+//header
+$text_lightGray: #EAEAEA;
+//
+
+//home page
+$text_dark: #202020;
+
+
+
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+@mixin noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
